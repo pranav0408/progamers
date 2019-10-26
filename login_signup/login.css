@@ -1,0 +1,116 @@
+:root{
+    --gradient: 
+                white,
+                #2c3e50,
+                #2f3f5f
+}
+body{
+    background: linear-gradient( 45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.3), rgba(0,0,0,0.1)  ); 
+    overflow: hidden;
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90vw;
+    min-height: 80vh;
+    height: auto;
+    box-shadow: -30px 20px 40px 20px rgba(0,0,0,0.2), -10px 20px 20px 5px rgba(0,0,0,0.5)  ;
+    background: radial-gradient( circle at top right, #2c3e50, #2c3e50, #23303d, #27333f );
+    text-align: center;
+    border-radius: 20px;
+    transform-origin: right;
+    transition: all 1s ease;
+}
+.login{
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.signup{
+    z-index: -1;
+}
+.form-title{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: .2em;
+    font-family: Helvetica;
+    text-transform: uppercase;
+}
+.form-content{
+    margin-top: 10vh;
+}
+.form-content img{
+    width: 200px;
+    height: auto;
+}
+.form-content div{
+    padding: 10px;
+}
+.form input, .form button{
+    padding: 10px 40px 10px 40px;
+    font-size: 16px;
+    text-align: center;
+}
+.form button{
+    padding: 10px 40px;
+}
+input[type="email"]{
+    outline: none;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    border: 2px white solid;
+}
+input[type="password"]{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    border: 2px white solid;
+}
+button{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    /* background: rgb(194, 170, 37); */
+    background: linear-gradient( 90deg, var(--gradient) );
+    background-size: 500% 100%;
+    background-position: 100% 50%;
+    /* box-shadow: inset -2px 1px 2px 2px rgba(243, 219, 81, 1), -2px 1px 4px 1px rgba( 0,0,0,0.5 ); */
+    cursor: pointer;
+    transition: background .5s ease, color .5s ease;
+    color: white;
+}
+button:hover{
+    background-position: 0% 50%;
+    color: black;
+}
+button:active {
+    box-shadow: inset -2px 1px 2px 2px rgba(0,0,0,0.5);
+}
+@media only screen and ( min-width: 720px ){
+    .form{
+        width: 500px;
+        /* min-height: 80vh; */
+        height: auto;
+    }
+}
+.text-light{
+    color: aliceblue;
+    font-family: monospace;
+}
+.switch{
+    border: none;
+    background: transparent;
+    border-radius: 0px;
+    padding: 1px 2px !important;
+    color: rgba(255,255,255,0.5);
+}
+.switch:active{
+    box-shadow: none;   
+}

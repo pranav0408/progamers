@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../assets/img/pgLogo.svg">
+    <link rel="stylesheet" href="./login.css">
+    <title>Login/Signup to Progamers</title>
+</head>
+<body>
+    <div class="form login" >
+        <div class="form-content">
+            <div class="form-title">
+                <img src="../assets/img/pgLogo.svg" alt="">
+                <br>
+                Login
+            </div>
+            <div >
+                <span>  </span>
+                <input type="email" id="login-email" name="email" placeholder="E-mail">
+            </div>
+            <div >
+                <span> </span>
+                <input type="password" id="login-password" name="password" placeholder="Password">
+            </div>
+            <div id="submit">
+                <button type="button"> Login </button>
+            </div>
+            <div class="text-light text-center">
+                don't have an account? <button class="switch signup-btn">Signup</button>
+            </div>
+        </div>
+    </div>
+    <div class="form signup" >
+        <div class="form-content">
+            <div class="form-title">
+                <img src="../assets/img/pgLogo.svg" alt="">
+                <br>
+                Signup
+            </div>
+            <div >
+                <span>  </span>
+                <input type="email" id="signup-email" name="email" placeholder="E-mail">
+            </div>
+            <div >
+                <span> </span>
+                <input type="password" id="signup-password" name="password" placeholder="Password">
+            </div>
+            <div id="submit">
+                <button type="button"> Signup </button>
+            </div>
+            <div class="text-light text-center">
+                Already have an account? <button class="switch login-btn">Login Instead</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./login.js"></script>
+</body>
+</html>
