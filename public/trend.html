@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/trend.css">
+    <title>Progamers | Trend</title>
+</head>
+<body>
+    
+    <div class="container-main" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="container-nav" onclick="myFunction2(this)">
+        <div class="nav">
+            <ul class="text-center">
+                <li> <a href="#"> <div class="navLogo"></div> </a> </li>
+                <li><a href="/"> Home </a></li>
+                <li><a href="/articles">Articles</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="text-center text-light p-5">
+        <h1> Trend in Games </h1>
+        <hr>
+    </div>
+
+    <div class="text-center contributedBy text-muted">
+        <h5>API used of https://rawg.io/</h5>
+    </div>
+
+    <div class="container">
+        <div class="loader-container text-right"></div>
+        <div class="container-fluid jumbotron mt-5">
+            <h4> Following is the list for which you can get the info about... </h4>
+            
+            <ul class="list-group">
+                <li class="list-group-item m-2"> 
+                    <div class="row">
+                        <div class="col-sm-8">
+                            1. Top ten most anticipated upcoming games
+                        </div>
+                        <div class="col-sm-4 text-right">
+                            <button class="btn btn-info" onclick="showAnticipated()">View Details</button>
+                        </div>
+                    </div>  
+                </li>
+                <li class="list-group-item m-2">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            2. Top ten most popular games in 2019
+                        </div>
+                        <div class="col-sm-4 text-right">
+                            <button class="btn btn-info" onclick="showPopular()">View Details</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container bg-light p-5 trendContainer">
+        <!-- Template -->
+        <!--<div class="row">
+            <div class="col-sm-6">
+                <div class="card m-3">
+                    <img src="./assets/img/profile.png" alt="Game Image" class="card-img-top">
+                    <h3 class="card-title text-center"> Game Title </h3>
+                    <div class="text-center">
+                        <hr>
+                    </div>
+                    <div class="ml-3">
+                        <p class="card-body">
+                            <h4>Released: <span class="badge badge-warning"> 2019-10-11 </span> </h4>
+                            <h4>Ratings: <span class="badge badge-info">5</span> </h4>
+                            <h5>Number of Suggestions: <span class="badge badge-pill badge-secondary">445</span> </h5>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card m-3">
+                    <img src="./assets/img/profile.png" alt="Game Image" class="card-img-top">
+                    <h3 class="card-title text-center"> Game Title </h3>
+                    <div class="text-center">
+                        <hr>
+                    </div>
+                    <div class="ml-3">
+                        <p class="card-body">
+                            <h4>Released: <span class="badge badge-warning"> 2019-10-11 </span> </h4>
+                            <h4>Ratings: <span class="badge badge-info">5</span> </h4>
+                            <h5>Number of Suggestions: <span class="badge badge-pill badge-secondary">445</span> </h5>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="./script/trend.js"></script>
+</body>
+</html>
