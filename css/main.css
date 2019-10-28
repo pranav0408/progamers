@@ -223,19 +223,19 @@ svg{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.8));
+    filter: drop-shadow(0px 0px 10px cornflowerblue);
 }
 .articleImg{
     background: url('../assets/img/article.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.8));
+    filter: drop-shadow(0px 0px 10px cornflowerblue);
 }
 .profileImg{
     background: url('../assets/img/profile.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.8));
+    filter: drop-shadow(0px 0px 10px cornflowerblue);
 }
