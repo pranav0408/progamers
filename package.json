@@ -1,0 +1,24 @@
+{
+  "name": "progamers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranav0408/progamers.git"
+  },
+  "keywords": [],
+  "author": "Pranav Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pranav0408/progamers/issues"
+  },
+  "homepage": "https://github.com/pranav0408/progamers#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
