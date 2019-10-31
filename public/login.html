@@ -30,7 +30,7 @@
         </div>
     </div>
     
-    <div class="form login" >
+    <form class="form login" >
         <div class="form-content">
             <div class="form-title">
                 <img src="../assets/img/pgLogo.svg" alt="">
@@ -39,21 +39,21 @@
             </div>
             <div >
                 <span>  </span>
-                <input type="email" id="login-email" name="email" placeholder="E-mail">
+                <input type="email" id="login-email" name="email" placeholder="E-mail" required>
             </div>
             <div >
                 <span> </span>
-                <input type="password" id="login-password" name="password" placeholder="Password">
+                <input type="password" id="login-password" name="password" placeholder="Password" required>
             </div>
             <div id="submit">
-                <button type="button"> Login </button>
+                <button type="submit"> Login </button>
             </div>
             <div class="text-light text-center">
-                don't have an account? <button class="switch signup-btn">Signup</button>
+                don't have an account? <a class="switch signup-btn">Signup</a>
             </div>
         </div>
-    </div>
-    <div class="form signup" >
+    </form>
+    <form class="form signup" method="POST" action="/api/person/signup" >
         <div class="form-content">
             <div class="form-title">
                 <img src="../assets/img/pgLogo.svg" alt="">
@@ -62,20 +62,24 @@
             </div>
             <div >
                 <span>  </span>
-                <input type="email" id="signup-email" name="email" placeholder="E-mail">
+                <input type="text" id="signup-name" name="name" placeholder="Full Name" required>
+            </div>
+            <div >
+                <span>  </span>
+                <input type="email" id="signup-email" name="email" placeholder="E-mail" required>
             </div>
             <div >
                 <span> </span>
-                <input type="password" id="signup-password" name="password" placeholder="Password">
+                <input type="password" id="signup-password" name="password" placeholder="Password" required>
             </div>
             <div id="submit">
-                <button type="button"> Signup </button>
+                <button type="submit"> Signup </button>
             </div>
             <div class="text-light text-center">
-                Already have an account? <button class="switch login-btn">Login Instead</button>
+                Already have an account? <a class="switch login-btn" >Login Instead</a>
             </div>
         </div>
-    </div>
+    </form>
 
     <script src="./script/login.js"></script>
 </body>

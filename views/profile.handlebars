@@ -1,0 +1,33 @@
+<div class="container jumbotron mt-5">
+    <div class="row">
+        <div class="col-sm-6 text-center p-3">
+            <img src="{{profile_url}}" class="profileImage" alt="Profile Avatar">
+        </div>
+        <div class="col-sm-6 profileContent text-center p-3">
+
+            <div class="form-group">
+                <label for="name" class="float-left">Name:</label>
+                <input type="text" class="form-control" readonly="readonly" value="{{name}}">
+            </div>
+            <div class="form-group">
+                <label for="name" class="float-left">Email:</label>
+                <input type="text" class="form-control" readonly="readonly" value="{{email}}">
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col text-center">
+            <div class="form-group">
+                <label for="bio">Your Bio:</label>
+                <textarea name="bio" id="bio" cols="30" rows="5" readonly="readonly" class="form-control text-center p-3">{{ bio }}</textarea>
+            </div>
+            <div>
+                <form action="/profile/update/{{id}}">
+                    <button class="btn btn-warning">Update Profile?</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+body{
+    margin: 1px;
+    background: #121212;
+    min-height: 100vh;
+}
+.profileImage{
+    width: 300px;
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px cornflowerblue
+}
+hr{
+    width: 60vw;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+#bio{
+    width: 80%;
+    margin: 0 auto;
+}
+input,textarea{
+    box-shadow: 0px 0px 5px .1em cornflowerblue;
+}
