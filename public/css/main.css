@@ -99,6 +99,26 @@ svg{
         opacity: 1;
     }
  }
+ @media only screen and (max-width: 600px){
+    .header h1{
+        font-size: 40px;
+    }
+    .path{
+        display: none;
+    }
+    @keyframes animateImg{
+        0%{
+            opacity: 0;
+            transform: translate(5%,20%);
+        }
+        60%{
+            opacity: 0.4;
+        }
+        100%{
+            opacity: 1;
+        }
+     }
+}
 
  /* Navigation */
  .container-main{

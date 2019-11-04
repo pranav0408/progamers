@@ -9,6 +9,27 @@ router.get('/',(req,res)=>{
     res.json(person)
 })
 
+// login route
+router.post('/login',(req,res)=>{
+    const found = person.some( person =>  person.email === req.body.email )
+    if( found ){
+        person.forEach( p => {
+            if( p.email === req.body.email ){
+                // console.log( p )
+                // console.log( req.body )
+                if(p.pass === req.body.password){
+                    res.redirect(`/profile/${p.id}`)
+                }
+                else{
+                    res.status(400).json({ msg: `Invalid email or password ` })
+                }   
+            }
+        })
+        }else{
+            res.status(400).json({ msg: `Invalid email or password ` })
+        }
+})
+
 // create member
 router.post('/signup',(req,res)=>{
     var num = Math.random() * 5;
@@ -38,7 +59,7 @@ router.post('/update/:id',(req,res)=>{
         const updPerson = req.body;
         person.forEach( p => {
             if( p.id == req.params.id ){
-                console.log(updPerson)
+                // console.log(updPerson)
                 p.name = updPerson.name ? updPerson.name : p.name;
                 p.email = updPerson.email ? updPerson.email : p.email;
                 p.bio = updPerson.bio ? updPerson.bio : p.bio;
